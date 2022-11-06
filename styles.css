@@ -1,14 +1,128 @@
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
+  background-color: rgb(20, 20, 20);
+}
+
+main {
   height: 100vh;
-  margin: 0 5rem;
-  background-color: #141414;
+  aspect-ratio: 1.4;
+  margin: 0 auto;
+  display: flex;
+}
+
+.banner {
+  display: flex;
+  position: relative;
+  top: -80%;
+  left: 0;
+  width: 100%;
+  background-color: #101010;
+  opacity: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  width: 10rem;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 5rem;
+  opacity: 100%;
 }
 
 img {
   height: 100%;
+  width: 32rem;
+  object-fit: cover;
+}
+
+.citation {
+  position: relative;
+  top: -15.5rem;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  width: 14rem;
+  font-size: .9rem;
+}
+
+.cite {
+  color: white;
+}
+
+.right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #333333;
+}
+
+section {
+  background-color: #eeeeee;
+  overflow: auto;
+}
+
+.heading {
+  padding-top: 10rem;
+  padding-left: 2.5rem;
+  padding-bottom: 3rem;
+  padding-right: 6rem;
+}
+
+.signUp {
+  position: relative;
+  top: -1rem;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.fields {
+  background-color: white;
+  padding: 1rem;
+  padding-left: 2.5rem;
+}
+
+.inputs {
+  display: grid;
+  grid-template-areas:
+  "a b"
+  "c d"
+  "e f";
+}
+
+.inputs > div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.buttons {
+  padding: 3rem;
+  flex-grow: 1;
+}
+
+button {
+  background-color: rgb(87, 122, 87);
+  padding: .5rem;
+  border-radius: .5rem;
+  width: 10rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.logIn {
+  text-decoration-line: none;
+  color: green;
 }

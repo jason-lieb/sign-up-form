@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Sign-Up Form</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sign-Up Form</title>
 </head>
 <body>
-    <div>
-        
+  <main>
+    <div class="left">
+      <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Fern leaves">
+      <div class="banner">
+        <img id='logo' src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="odin logo">
+        <h1>ODIN</h1>
+      </div>
+      <p class="citation">Photo by <a class= 'cite' href="">Halie West</a> on <a class= 'cite' href="">Unsplash</a></p>
     </div>
-    <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Fern leaves">
+    <div class="right">
+      <section class="heading">
+        <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h3>
+        <h3 class="signUp">Sign up now to get started.</h3>
+        <h3>You <em>know</em> you want to.</h3>
+      </section>
+      <section class="fields">
+        <h3>Let's do this!</h3>
+        <div class="inputs">
+          <div class="a">
+            <label for="firstName">FIRST NAME</label>
+            <input id='firstName' type="text">
+          </div>
+          <div class="b">
+            <label for="lastName">LAST NAME</label>
+            <input id='lastName' type="text">
+          </div>
+          <div class="c">
+            <label for="email">EMAIL</label>
+            <input id='email' type="text">
+          </div>
+          <div class="d">
+            <label for="phoneNumber">PHONE NUMBER</label>
+            <input id='phoneNumber' type="text">
+          </div>
+          <div class="e">
+            <label for="password">PASSWORD</label>
+            <input id='password' type="text">
+          </div>
+          <div class="f">
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <input id='confirmPassword' type="text">
+          </div>
+        </div>
+      </section>
+      <section class="buttons">
+        <button>Create Account</button>
+        <p>Already have an account? <a class="logIn">Log in</a></p>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
